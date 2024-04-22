@@ -40,3 +40,33 @@
 .blurred {
   filter: blur(6px);
 }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon_download {
+  animation: blink 1s infinite;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.animation {
+  width: 0;
+  height: 4px;
+  background-color: #4891fd;
+  animation: progress 10s linear infinite;
+}

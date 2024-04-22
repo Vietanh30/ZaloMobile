@@ -31,15 +31,18 @@
 
     </div>
     <div class="container-fluid mt-5 pt-3 w-100">
-        <div class="row">
+        <div class="row align-items-center justify-content-between">
             <div class="col-auto d-flex justify-content-evenly gap-4">
                 <div class="py-3 " style="font-weight: 600; border-bottom: 2px solid #333;">Ưu tiên
                 </div>
                 <div class="py-3" style="font-weight: 500;">Khác</div>
             </div>
+            <div class="col-2 d-flex justify-content-start align-items-center">
+                <i class="fa-solid fa-download f-s-16 icon_download" style="cursor: pointer;"
+                    onclick="downloadMessage()"></i>
+            </div>
         </div>
     </div>
-
     <div class="container-fluid w-100">
         <div class="row px-0 py-3 justify-content-evenly align-items-center content" style="background-color: #f7f7f7;">
             <div class="col-2 py-2 blurred">
@@ -282,6 +285,10 @@
     <script>
         function userpage() {
             window.location.href = 'user.html';
+        }
+        $('.animation').hide();
+        function downloadMessage(params) {
+            window.location.href = 'loading.html';
         }
     </script>
 </body>
